@@ -2,6 +2,8 @@
 
 **言語:** [English](README.md) | 日本語
 
+**公式サイト:** [VoluBridge 公式サイト](https://bridgedevs.com/volubridge)
+
 VoluBridge は、macOS の通常のキーボード音量キーで外部オーディオ出力を操作できるようにするメニューバーアプリです。
 
 HDMI / DisplayPort モニター、USB DAC、オーディオインターフェイス、ヘッドホンなど、macOS から音は出せるもののシステム音量キーでは扱いにくい出力デバイス向けに作られています。
@@ -34,9 +36,8 @@ macOS 側で物理デバイスを直接選んだ場合、VoluBridge はその経
 ## 動作環境
 
 - macOS 11 以降
-- Apple Silicon または Intel Mac
+- Apple Silicon Mac
 - 初回ドライバインストール、またはドライバ更新時の管理者パスワード
-- 細かなキーボード音量ステップを有効にする場合のみアクセシビリティ許可
 
 ## インストール
 

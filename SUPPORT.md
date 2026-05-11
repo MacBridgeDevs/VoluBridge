@@ -6,7 +6,7 @@ This page lists the fastest checks to make before reporting a VoluBridge problem
 
 ## Supported Systems
 
-VoluBridge supports macOS 11 or later on Apple Silicon and Intel Macs.
+VoluBridge supports macOS 11 or later on Apple Silicon Macs.
 
 The app installs a CoreAudio HAL driver named `VoluBridgeRT.driver`. Installing, updating, or removing that driver requires administrator approval and may briefly restart CoreAudio.
 
@@ -29,9 +29,7 @@ The app installs a CoreAudio HAL driver named `VoluBridgeRT.driver`. Installing,
 
 ### Volume Keys Do Not Work
 
-If `Fine-grained Volume Steps` is enabled, macOS Accessibility permission is required.
-
-After an app update, macOS can keep a stale permission entry. Use `Reset Accessibility Permission` in VoluBridge, then grant Accessibility permission again in System Settings.
+Confirm that `System Output` is set to `VoluBridge`, that `VoluBridge Output` points to the intended real device, and that the VoluBridge driver is installed and up to date. If the problem started after changing devices, run `Reset Audio Connection`.
 
 ### Clicks, Dropouts, or Delayed Resume
 
@@ -68,6 +66,6 @@ License activation and validation use network requests for license status and se
 
 ## Uninstalling
 
-Use `Remove App Completely` in VoluBridge when possible. It removes the app, driver, related settings, and Accessibility permission state.
+Use `Remove App Completely` in VoluBridge when possible. It removes the app, driver, and related settings.
 
 Use `Remove Driver Only` if you want to keep the app and settings but remove `VoluBridgeRT.driver`.

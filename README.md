@@ -2,6 +2,8 @@
 
 **Language:** English | [日本語](README.ja.md)
 
+**Website:** [VoluBridge Official Website](https://bridgedevs.com/volubridge)
+
 VoluBridge is a macOS menu bar app for controlling external audio outputs with the normal keyboard volume keys.
 
 It is designed for HDMI and DisplayPort monitors, USB DACs, audio interfaces, headphones, and other output devices that macOS can play through but cannot always control with the system volume keys.
@@ -34,9 +36,8 @@ If you select a physical output directly in macOS, VoluBridge automatically trea
 ## Requirements
 
 - macOS 11 or later
-- Apple Silicon or Intel Mac
+- Apple Silicon Mac
 - Administrator password for first-time driver installation or driver updates
-- Accessibility permission only when fine-grained keyboard volume steps are enabled
 
 ## Installation
 

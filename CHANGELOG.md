@@ -15,7 +15,7 @@ Initial release.
 - Keyboard volume control for external outputs such as HDMI monitors, DisplayPort monitors, USB DACs, audio interfaces, and headphones.
 - Separate `System Output` and `VoluBridge Output` device selection.
 - Automatic direct-output behavior when macOS is set to a physical device instead of VoluBridge.
-- Fine-grained volume steps with optional Accessibility permission.
+- Fine-grained volume steps.
 - Output channel-pair selection for multi-channel devices.
 - Real-time VU meter, spectrum view, and OPTIMIZER section.
 - Advanced RT controls for sample rate, clock behavior, buffers, fixed target, reported latency, reported safety, and power-saving behavior.
@@ -27,4 +27,3 @@ Initial release.
 ### Notes
 
 - First-time driver installation and driver updates require administrator approval because the CoreAudio HAL driver is installed under `/Library/Audio/Plug-Ins/HAL`.
-- Fine-grained keyboard volume handling may require resetting or re-granting Accessibility permission after app updates.
