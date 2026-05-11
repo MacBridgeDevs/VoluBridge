@@ -33,6 +33,20 @@ If you select a physical output directly in macOS, VoluBridge automatically trea
 - English and Japanese UI
 - 14-day trial with license activation
 
+## Latency Model Comparison
+
+VoluBridgeRT is not designed as a simple FIFO path that stores audio and plays it back later. It aligns the producer schedule and render output time around a fixed target, so the virtual path is designed to avoid latency buildup during long sessions.
+
+| Area | Typical FIFO model | VoluBridgeRT |
+|---|---|---|
+| Main stability strategy | Keep queued audio stock | Track the output timeline |
+| Latency behavior | Changes with how much audio is buffered | Controlled around a fixed target |
+| Long sessions | Delay can grow if the queue grows | Designed to avoid accumulating delay |
+| Underflow recovery | Queue state can collapse and leave delay behind | Resyncs around the target timeline |
+| What diagnostics show | Usually limited to buffer or app state | Fixed Cursor, Real Add Latency, missing, underflow, clock, and routing state |
+
+This does not mean physical latency disappears. It means VoluBridge is designed not to add unnecessary waiting time over direct hardware output.
+
 ## Requirements
 
 - macOS 11 or later
