@@ -33,7 +33,7 @@ In everyday use, this means:
 
 If you select a physical output directly in macOS, VoluBridge automatically treats that path as direct output instead of forcing all audio through the bridge.
 
-![VoluBridge output routing and channel selection](https://bridgedevs.com/assets/volubridge-output-routing.png)
+![VoluBridge output routing and channel selection](assets/VoluBridgeOutput.png)
 
 ## Highlights
 

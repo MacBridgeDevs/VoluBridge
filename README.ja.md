@@ -33,7 +33,7 @@ VoluBridge は `VoluBridgeRT` という仮想 CoreAudio 出力デバイスを追
 
 macOS 側で物理デバイスを直接選んだ場合、VoluBridge はその経路をダイレクト出力として扱い、無理にブリッジ経由へ戻しません。
 
-![VoluBridge の出力ルーティングとチャンネル選択](https://bridgedevs.com/assets/volubridge-output-routing.png)
+![VoluBridge の出力ルーティングとチャンネル選択](assets/VoluBridgeOutput.png)
 
 ## 主な特徴
 
